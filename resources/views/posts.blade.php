@@ -3,6 +3,7 @@
 
     @foreach ($posts as $post)
         <article class="py-8 max-w-screen-md border-b border-gray-300">
+            <p>adadwdw</p>
             <a href="/posts/{{ $post['id'] }}" class="hover:underline">
                 <h2 class="mb-1 text-3xl tracking-tight font-bold text-gray-900">{{ $post['judul'] }}</h2>
             </a>
