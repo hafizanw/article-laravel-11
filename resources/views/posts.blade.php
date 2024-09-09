@@ -3,15 +3,14 @@
 
     @foreach ($posts as $post)
         <article class="py-8 max-w-screen-md border-b border-gray-300">
-            <p>adadwdw</p>
-            <a href="/posts/{{ $post['id'] }}" class="hover:underline">
+            <a href="/posts/{{ $post['slug'] }}" class="hover:underline">
                 <h2 class="mb-1 text-3xl tracking-tight font-bold text-gray-900">{{ $post['judul'] }}</h2>
             </a>
             <div class="text-base text-gray-500">
                 <a href="#">{{ $post['author'] }}</a> | 9 September 2024
             </div>
-            <p class="my-4 font-light">{{ Str::limit($post['body'],110) }}</p>
-            <a href="/posts/{{ $post['id'] }}" class="font-medium text-blue-500 hover:underline"> Read more &raquo;</a>
+            <p class="my-4 font-light">{{ Str::limit($post['body'], 110) }}</p>
+            <a href="/posts/{{ $post['slug'] }}" class="font-medium text-blue-500 hover:underline"> Read more &raquo;</a>
         </article>
     @endforeach
 
